@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KeyInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/toolbar_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看钥匙"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="@+id/toolbar3"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/keyNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="钥匙名称: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+
+    <TextView
+        android:id="@+id/showKeyNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/keyNameDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/keyNameDetail"
+        app:layout_constraintTop_toTopOf="@+id/keyNameDetail" />
+
+    <TextView
+        android:id="@+id/accountDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="账号: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/keyNameDetail"
+        app:layout_constraintTop_toBottomOf="@+id/keyNameDetail" />
+
+    <TextView
+        android:id="@+id/showAccountDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/accountDetail"
+        app:layout_constraintEnd_toEndOf="@+id/showKeyNameDetail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/accountDetail"
+        app:layout_constraintTop_toTopOf="@+id/accountDetail" />
+
+    <TextView
+        android:id="@+id/password1Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="密码1: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/accountDetail"
+        app:layout_constraintTop_toBottomOf="@+id/accountDetail" />
+
+    <TextView
+        android:id="@+id/showPassword1Detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/password1Detail"
+        app:layout_constraintEnd_toEndOf="@+id/showKeyNameDetail"
+        app:layout_constraintStart_toEndOf="@+id/password1Detail"
+        app:layout_constraintTop_toTopOf="@+id/password1Detail" />
+
+    <TextView
+        android:id="@+id/password2Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="密码2: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/password1Detail"
+        app:layout_constraintTop_toBottomOf="@+id/password1Detail" />
+
+    <TextView
+        android:id="@+id/showPassword2Detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/password2Detail"
+        app:layout_constraintEnd_toEndOf="@+id/showKeyNameDetail"
+        app:layout_constraintStart_toEndOf="@+id/password2Detail"
+        app:layout_constraintTop_toTopOf="@+id/password2Detail" />
+
+    <TextView
+        android:id="@+id/URLDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="URL: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/password2Detail"
+        app:layout_constraintTop_toBottomOf="@+id/password2Detail" />
+
+    <TextView
+        android:id="@+id/showURLDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/URLDetail"
+        app:layout_constraintEnd_toEndOf="@+id/showKeyNameDetail"
+        app:layout_constraintStart_toEndOf="@+id/URLDetail"
+        app:layout_constraintTop_toTopOf="@+id/URLDetail" />
+
+    <TextView
+        android:id="@+id/detailDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="备注"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/URLDetail"
+        app:layout_constraintTop_toBottomOf="@+id/URLDetail" />
+
+    <TextView
+        android:id="@+id/showDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailDetail"
+        app:layout_constraintEnd_toEndOf="@+id/showKeyNameDetail"
+        app:layout_constraintStart_toEndOf="@+id/detailDetail"
+        app:layout_constraintTop_toTopOf="@+id/detailDetail" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/save_btn"
+        android:text="编辑"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/delete_write"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleDetail"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar3"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/titleDetail"
+        app:layout_constraintTop_toTopOf="@+id/titleDetail"
+        app:srcCompat="@drawable/delete_icon_write" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
